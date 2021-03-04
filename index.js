@@ -1,6 +1,7 @@
 function updateObjectWithKeyAndValue(obj, key, val) {
   // NON-DESTRUCTIVE!
-  let resultObj = Object.assign(resultObj, obj);
+  let resultObj = {};
+  resultObj = Object.assign(resultObj, obj);
   resultObj[key] = val;
   return resultObj;
 }
